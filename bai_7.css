@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,400;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+
+}
+#main{
+    margin-top: 30px;
+}
+.container{
+    width: 100%;
+    padding: 0 40px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+.col{
+    padding: 0 16px;
+}
+.col-30{
+    width: 30%;
+}
+.col-70{
+    width: 70%;
+}
+
+.form-grpup{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+.form-grpup label{
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+.form-grpup:first-child label{
+    margin: 0;
+}
+.form-grpup input{
+    height: 32px;
+    padding: 10px 8px;
+    font-size: 16px;
+}
+
+.form-grpup .checkBox{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 14px;
+    gap: 10px;
+}
+.checkBox span{
+    font-size: 14px;
+    font-weight: 300;
+}
+.form-btn{
+    display: flex;
+    align-items: center;
+}
+.btn{
+
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    margin-right: 4px;
+    border-radius: 4px;
+}
+.btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.btn:active{
+    transform: translateY(2px);
+    box-shadow: 0 1px #d3d1d1;
+}
+.btn-info{
+    margin-top: 10px;
+    background-color: rgb(21, 197, 21);
+}
+.btn-success{
+    margin-top: 10px;
+    background-color: rgb(153, 20, 230);
+}
+
+.btn-danger{
+    background-color: rgb(240, 81, 37);
+}
+.btn-warning{
+    background-color: rgb(239, 221, 19);
+}
+/* table */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table th,
+table td{
+    border: 1px solid #ccc; 
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th:nth-child(1){
+    width: 10%;
+}
+th:nth-child(2){
+    width: 30%;
+}
+th:nth-child(3){
+    width: 15%;
+}
+th:nth-child(4){
+    width: 20%;
+}
+th:nth-child(5){
+    width: 10%;
+}
+
+/* còn hàng hết hàng */
+.product{
+    padding: 4px;
+    background-color: rgb(155, 248, 49);
+    border-radius: 4px;
+}
+.re-product{
+    padding: 4px;
+    background-color: rgb(248, 185, 49);
+    border-radius: 4px;
+}
+
+/* search  */
+.form-control{
+    width: 80%;
+    padding: 4px;
+    outline: none;
+    margin-bottom: 10px;
+}

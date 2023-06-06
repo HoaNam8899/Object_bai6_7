@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./bai_7.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col col-30">
+                    <div class="form-grpup">
+                        <label for="" class="control-lable">Mã sách</label>
+                        <input type="text" class="form-control" id="bookId">
+                    </div>
+                    <div class="form-grpup">
+                        <label for="" class="control-lable">Tên sách</label>
+                        <input type="text" class="form-control" id="bookName">
+                    </div>
+                    <div class="form-grpup">
+                        <label for="" class="control-lable">Giá sách</label>
+                        <input type="text" class="form-control" id="bookPrice">
+                    </div>
+                    <div class="form-grpup">
+                        <label for="" class="control-lable">Tác giả</label>
+                        <input type="text" class="form-control" id="bookAuthor">
+                    </div>
+                    <div class="form-grpup ">
+                        <label for="" class="control-lable">Trạng thái</label>
+                        <label for="" class="checkBox">
+                            <input type="checkbox" id="bookStatus"> 
+                            <span>Còn hàng</span>
+                        </label>
+                    </div>
+                    <div class="form-btn">
+                        <button type="button" class="btn btn-info" onclick="createBook()">Thêm</button>
+                        <button type="button" class="btn btn-success" onclick="bookSave()">Lưu</button>
+                    </div>
+                    
+                </div>
+                <div class="col col-70">
+                    <div class="search">
+                        <div class="row">
+                            <div class="col col-70">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm..." onkeyup="searchBook(event)">
+                            </div>
+                            <div class="col col-30">
+                                <select name="" id="" class="form-control" onchange="sortedBook(event)">
+                                    <option value="">Mặc định</option>
+                                    <option value="asc">Giá tăng dần</option>
+                                    <option value="desc">Giá giảm dần</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mã sách</th>
+                                <th>Tên sách</th>
+                                <th>Giá</th>
+                                <th>Tác giả</th>
+                                <th>Trạng thái</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody id="list">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bai_7.js"></script>
+</body>
+</html>
